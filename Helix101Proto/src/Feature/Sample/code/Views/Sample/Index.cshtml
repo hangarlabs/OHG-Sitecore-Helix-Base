@@ -1,0 +1,12 @@
+﻿@model Sitecore.Mvc.Presentation.RenderingModel
+@using Sitecore.Mvc
+
+<div class="content">
+    <p class="image-wrapper">
+        @Html.Sitecore().Field("image")
+    </p>
+    <h2>@Html.Sitecore().Field("title")</h2>
+    <p class="body">
+        @Html.Sitecore().Field("body")
+    </p>
+</div>

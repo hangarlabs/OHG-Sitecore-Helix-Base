@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{CE0D6D34-955A-4B8F-AD3D-3E5B5A1141F6}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		gulp-config.js = gulp-config.js
+		gulpfile.js = gulpfile.js
+		NuGet.config = NuGet.config
+		README.md = README.md
+		sonarqube-local.cmd = sonarqube-local.cmd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Feature", "2. Feature", "{72C451BF-82DF-4528-909F-4735952A5F06}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Foundation", "3. Foundation", "{2E422AB3-17A2-478F-AB82-C72EAB15B907}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Project", "1. Project", "{8E8CC37F-4877-48D3-9089-BB481061F759}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{6429AAAC-EEEB-492B-B2DF-99E35C6822BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serialization", "Serialization", "{DD4E3B38-96FB-4D42-A217-BB3C8C85B9AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Serialization", "src\Foundation\Serialization\code\Sitecore.Foundation.Serialization.csproj", "{247B4C63-4DF8-4E27-B49F-D30417010D59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Project.Common", "src\Project\Common\code\Sitecore.Project.Common.csproj", "{82533DC1-11F7-4C30-B0CC-08AA0C4F23CD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{422A8F7D-5A9D-49D1-AB6A-EE0C05FF5200} = {422A8F7D-5A9D-49D1-AB6A-EE0C05FF5200}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{DF132A03-6784-49DC-995D-D753AB27F230}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Sample", "src\Feature\Sample\code\Sitecore.Feature.Sample.csproj", "{422A8F7D-5A9D-49D1-AB6A-EE0C05FF5200}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{247B4C63-4DF8-4E27-B49F-D30417010D59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{247B4C63-4DF8-4E27-B49F-D30417010D59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{247B4C63-4DF8-4E27-B49F-D30417010D59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{247B4C63-4DF8-4E27-B49F-D30417010D59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82533DC1-11F7-4C30-B0CC-08AA0C4F23CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82533DC1-11F7-4C30-B0CC-08AA0C4F23CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82533DC1-11F7-4C30-B0CC-08AA0C4F23CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82533DC1-11F7-4C30-B0CC-08AA0C4F23CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{422A8F7D-5A9D-49D1-AB6A-EE0C05FF5200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{422A8F7D-5A9D-49D1-AB6A-EE0C05FF5200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{422A8F7D-5A9D-49D1-AB6A-EE0C05FF5200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{422A8F7D-5A9D-49D1-AB6A-EE0C05FF5200}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6429AAAC-EEEB-492B-B2DF-99E35C6822BF} = {8E8CC37F-4877-48D3-9089-BB481061F759}
+		{DD4E3B38-96FB-4D42-A217-BB3C8C85B9AA} = {2E422AB3-17A2-478F-AB82-C72EAB15B907}
+		{247B4C63-4DF8-4E27-B49F-D30417010D59} = {DD4E3B38-96FB-4D42-A217-BB3C8C85B9AA}
+		{82533DC1-11F7-4C30-B0CC-08AA0C4F23CD} = {6429AAAC-EEEB-492B-B2DF-99E35C6822BF}
+		{DF132A03-6784-49DC-995D-D753AB27F230} = {72C451BF-82DF-4528-909F-4735952A5F06}
+		{422A8F7D-5A9D-49D1-AB6A-EE0C05FF5200} = {DF132A03-6784-49DC-995D-D753AB27F230}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77A436DA-C7B2-4A5E-B3B6-442E5E05E073}
+	EndGlobalSection
+EndGlobal
